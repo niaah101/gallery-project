@@ -1,16 +1,16 @@
 .slideshow{
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 40px;
     height: 600px;
     background: black;
     box-sizing: border-box;
 }
 .pictures {
-    margin:auto;
+    margin: auto;
     width: 190px;
     perspective: 1000px;
     position: relative;
-    padding-top: 80px;
+    padding-top: 90px;
 }
 .pictures-carrousel {
     width: 100%;
