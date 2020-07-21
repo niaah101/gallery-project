@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-top: 0 auto;
+    padding: 5px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Titillium Web';
+}
+
+footer {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Titillium Web';
+}
+
+/*video {
+    object-fit: cover;
+}*/
+
+/* ================================= 
+  Classes
+==================================== */
+
+.button {
+    width: auto;
+    order: 1;
+    display: block;
+    color: white;
+}
+
+
+.logo {
+    color: darkblue;
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-family: 'Titillium Web';
+}
+
+.nav {
+    display:flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav a {
+    color: darkblue;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.burger {
+    display: block;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    color: darkblue;
+    margin: 5px;
+    background-color: darkblue;
+}
+
+.button, .btn-login, .btn-signup {
+        padding: 7px 15px;
+        background: transparent;
+        border: 1px solid rgb(228, 83, 22);
+        text-decoration: none;
+}
+
+.btn-login, .btn-signup a {
+    color: rgb(241, 160, 61);
+}
+
+.container img {
+    width: 90%;
+    height: 250px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid whitesmoke;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background: black;
+    height: 100%;
+}
+
+.container div {
+    max-width: 270px;
+    margin: 5px auto;
+}
+
+.vidsmoke {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../images/spring-fed-images-Z2gMxgOz3i8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.vidsmoke h1 {
+    /*margin: auto;
+    align-items: center;
+    position: absolute;
+    padding: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;*/
+    color: darkblue;
+    font-size: 20px;
+    font-family: 'Titillium Web';
+    letter-spacing: 0.2em;
+    text-shadow: 2px 2px 1px orange,
+                4px 4px 3px white;
+}
+
+
+/* ================================= 
+  Vidsmoke Animation
+==================================== */
+
+.vidsmoke h1 span  {
+    display: inline-block;
+    animation: animate 1s linear forwards;
+    opacity: 0;
+}
+
+.vidsmoke h1 span:nth-child(1) {
+    animation-delay: 1s;
+}
+.vidsmoke h1 span:nth-child(2) {
+    animation-delay: 1.25s;
+}
+.vidsmoke h1 span:nth-child(3) {
+    animation-delay: 1.5s;
+}
+h1 span:nth-child(4) {
+    animation-delay: 1.75s;
+}
+.vidsmoke h1 span:nth-child(5) {
+    animation-delay: 2s;
+}
+.vidsmoke h1 span:nth-child(6) {
+    animation-delay: 2.25s;
+}
+.vidsmoke h1 span:nth-child(7) {
+    animation-delay: 2.75s;
+}
+.vidsmoke h1 span:nth-child(8) {
+    animation-delay: 3s;
+}
+.vidsmoke h1 span:nth-child(9) {
+    animation-delay: 3.25s;
+}
+.vidsmoke h1 span:nth-child(10) {
+    animation-delay: 3.5s;
+} 
+
+.vidsmoke h1 span:nth-child(11) {
+    animation-delay: 4s;
+}
+.vidsmoke h1 span:nth-child(12) {
+    animation-delay: 4.25s;
+}
+.vidsmoke h1 span:nth-child(13) {
+    animation-delay: 4.5s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur();
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media screen (max-width: 1024px) {
+    .nav li {
+        width: 60%;
+    }
+}
+
+@media screen (max-width: 768px) { /*change to burger menu*/
+   .burger {
+        display: block;
+   }
+}
+
+@media screen (max-width: 628px) { /*change to flat slider*/
+    .burger {
+        display: block;
+    }
+}
+ */
