@@ -1,18 +1,13 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header {
-    text-align: center;
-    margin-top: 0 auto;
-    padding: 5px 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Titillium Web';
+p {
+    padding: 15px;
+    font-size: 14px;
+
 }
 
 footer {
@@ -20,6 +15,10 @@ footer {
     text-align: center;
     font-size: 12px;
     font-family: 'Titillium Web';
+}
+
+header {
+    padding: 15px;
 }
 
 /*video {
@@ -30,61 +29,42 @@ footer {
   Classes
 ==================================== */
 
-.button {
-    width: auto;
-    order: 1;
-    display: block;
-    color: white;
-}
-
-
 .logo {
     color: darkblue;
     letter-spacing: 5px;
-    font-size: 15px;
-    font-family: 'Titillium Web';
-}
-
-.nav {
-    display:flex;
-    width: 40%;
-    justify-content: space-around;
-}
-
-.nav li {
+    font-size: 12px;
+    text-decoration: none;
     list-style: none;
 }
 
-.nav a {
+.menu {
+    font-family: 'Titillium Web';
+}
+
+.menu li ul {
+    list-style: none;
+}
+
+.menu li a {
+    display: block;
     color: darkblue;
     letter-spacing: 3px;
-    font-weight: bold;
     font-size: 15px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.burger {
-    display: block;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    color: darkblue;
-    margin: 5px;
-    background-color: darkblue;
-}
-
-.button, .btn-login, .btn-signup {
-        padding: 7px 15px;
+.btn-login,.btn-signup {
+        padding: 5px 15px;
         background: transparent;
         border: 1px solid rgb(228, 83, 22);
         text-decoration: none;
+        display: inline-block;
 }
 
 .btn-login, .btn-signup a {
     color: rgb(241, 160, 61);
+    text-decoration: none;
 }
 
 .container img {
@@ -113,27 +93,19 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    background-image: url(../images/spring-fed-images-Z2gMxgOz3i8-unsplash.jpg);
+    justify-content: center;
+    background-image: url(../images/landing.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
 .vidsmoke h1 {
-    /*margin: auto;
-    align-items: center;
-    position: absolute;
-    padding: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    width: 100%;*/
-    color: darkblue;
+    color: rgb(233, 124, 8);
     font-size: 20px;
     font-family: 'Titillium Web';
     letter-spacing: 0.2em;
-    text-shadow: 2px 2px 1px orange,
+    text-shadow: 2px 2px 1px darkblue,
                 4px 4px 3px white;
 }
 
@@ -202,25 +174,91 @@ h1 span:nth-child(4) {
     }
 }
 
+
+/* ================================= 
+  Hamburger Menu
+==================================== */
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    order: 1;
+    cursor: pointer;
+    display: block;
+}
+
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    display: none;
+}
+
+.item.active{
+    display: block;
+}
+
+.bars{
+    background: darkblue;
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before,.bars::after{
+    background: darkblue;
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+    content: "";
+}
+.bars::before{
+    top: 5px;
+}
+.bars::after{
+    top: -5px;
+}
+
+
 /* ================================= 
   Media Queries
 ==================================== */
 
-@media screen (max-width: 1024px) {
-    .nav li {
-        width: 60%;
+@media screen and (min-width: 768px) { /*change to burger menu*/
+    .logo {
+        font-size: 20px;
     }
-}
-
-@media screen (max-width: 768px) { /*change to burger menu*/
-   .burger {
-        display: block;
-   }
-}
-
-@media screen (max-width: 628px) { /*change to flat slider*/
+    
     .burger {
+         display: none;
+    }
+
+    .item {
         display: block;
+        width: auto;
+    }
+ 
+    .vidsmoke h1 {
+     font-size: 40px;
+    }
+ }
+
+
+@media screen and (min-width: 1024px) {
+    .nav li {
+        width: 30px;
+    }
+
+    .vidsmoke h1 {
+        font-size: 60px;
     }
 }
- */
+
