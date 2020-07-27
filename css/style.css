@@ -4,11 +4,9 @@
     box-sizing: border-box;
 }
 
-p {
-    padding: 15px;
-    font-size: 14px;
-
-}
+/* ================================= 
+  Base Elements
+==================================== */
 
 footer {
     display: block;
@@ -21,13 +19,80 @@ header {
     padding: 15px;
 }
 
+p {
+    padding: 15px;
+    font-size: 14px;
+
+}
+
+
+/* ================================= 
+  Smoke Video
+==================================== */
 /*video {
     object-fit: cover;
 }*/
 
+
+
 /* ================================= 
-  Classes
+  Class Styles
 ==================================== */
+
+.container img {
+    width: 90%;
+    height: 250px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid whitesmoke;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background: black;
+    height: 100%;
+}
+
+.container div {
+    max-width: 270px;
+    margin: 5px auto;
+}
+
+.myform {
+    display: flex;
+    height: 12rem;
+    width: 20rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: turquoise;
+    display: none;
+}
+
+.myform button {
+    padding: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    justify-content: space-around;
+}
+
+
+.myform label {
+    font-weight: bold;
+    background-color: green;
+    flex-basis: 2rem;
+    display: block;
+    display: none;
+}
+
+.myform input {
+    height: 2em;
+    font-size: 14px;
+    background-color: whitesmoke;
+}
+
 
 .logo {
     color: darkblue;
@@ -54,40 +119,6 @@ header {
     text-transform: uppercase;
 }
 
-.btn-login,.btn-signup {
-        padding: 5px 15px;
-        background: transparent;
-        border: 1px solid rgb(228, 83, 22);
-        text-decoration: none;
-        display: inline-block;
-}
-
-.btn-login, .btn-signup a {
-    color: rgb(241, 160, 61);
-    text-decoration: none;
-}
-
-.container img {
-    width: 90%;
-    height: 250px;
-    margin: 5px;
-    padding: 5px;
-    border: 2px solid whitesmoke;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    background: black;
-    height: 100%;
-}
-
-.container div {
-    max-width: 270px;
-    margin: 5px auto;
-}
-
 .vidsmoke {
     display: flex;
     flex-wrap: wrap;
@@ -98,66 +129,84 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-}
-
-.vidsmoke h1 {
-    color: rgb(233, 124, 8);
-    font-size: 20px;
     font-family: 'Titillium Web';
-    letter-spacing: 0.2em;
-    text-shadow: 2px 2px 1px darkblue,
-                4px 4px 3px white;
 }
 
+.vidsmoke .letter {
+    color: rgb(245, 47, 47);
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    text-shadow: 2px 2px 1px rgb(235, 113, 6),
+            5px 5px 5px rgb(250, 229, 65),
+            2px 2px 2px black;
+    margin-bottom: 2em;
+}
+
+.vidsmoke .button {
+    padding: 10px 15px;
+    background: transparent;
+    border: 1px solid rgb(219, 71, 7);
+    text-decoration: none;
+    display: inline;
+    margin: 0 2em;
+    font-size: 17px;
+    color: yellow;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    text-shadow: 2px 2px 1px rgb(228, 83, 22),
+            4px 4px 3px darkblue,
+            2px 2px 2px black;
+}
 
 /* ================================= 
   Vidsmoke Animation
 ==================================== */
 
-.vidsmoke h1 span  {
+.vidsmoke .letter span {
     display: inline-block;
     animation: animate 1s linear forwards;
     opacity: 0;
 }
 
-.vidsmoke h1 span:nth-child(1) {
+.vidsmoke .letter span:nth-child(1) {
     animation-delay: 1s;
 }
-.vidsmoke h1 span:nth-child(2) {
+.vidsmoke .letter span:nth-child(2) {
     animation-delay: 1.25s;
 }
-.vidsmoke h1 span:nth-child(3) {
+.vidsmoke .letter span:nth-child(3) {
     animation-delay: 1.5s;
 }
-h1 span:nth-child(4) {
+.vidsmoke .letter span:nth-child(4) {
     animation-delay: 1.75s;
 }
-.vidsmoke h1 span:nth-child(5) {
+.vidsmoke .letter span:nth-child(5) {
     animation-delay: 2s;
 }
-.vidsmoke h1 span:nth-child(6) {
+.vidsmoke .letter span:nth-child(6) {
     animation-delay: 2.25s;
 }
-.vidsmoke h1 span:nth-child(7) {
+.vidsmoke .letter span:nth-child(7) {
     animation-delay: 2.75s;
 }
-.vidsmoke h1 span:nth-child(8) {
+.vidsmoke .letter span:nth-child(8) {
     animation-delay: 3s;
 }
-.vidsmoke h1 span:nth-child(9) {
+.vidsmoke .letter span:nth-child(9) {
     animation-delay: 3.25s;
 }
-.vidsmoke h1 span:nth-child(10) {
+.vidsmoke .letter span:nth-child(10) {
     animation-delay: 3.5s;
 } 
 
-.vidsmoke h1 span:nth-child(11) {
+.vidsmoke .letter span:nth-child(11) {
     animation-delay: 4s;
 }
-.vidsmoke h1 span:nth-child(12) {
+.vidsmoke .letter span:nth-child(12) {
     animation-delay: 4.25s;
 }
-.vidsmoke h1 span:nth-child(13) {
+.vidsmoke .letter span:nth-child(13) {
     animation-delay: 4.5s;
 }
 
@@ -200,11 +249,11 @@ h1 span:nth-child(4) {
     display: none;
 }
 
-.item.active{
+.item.active {
     display: block;
 }
 
-.bars{
+.bars {
     background: darkblue;
     display: inline-block;
     height: 3px;
@@ -212,7 +261,7 @@ h1 span:nth-child(4) {
     width: 18px;
 }
 
-.bars::before,.bars::after{
+.bars::before,.bars::after {
     background: darkblue;
     display: inline-block;
     height: 2px;
@@ -220,10 +269,10 @@ h1 span:nth-child(4) {
     width: 18px;
     content: "";
 }
-.bars::before{
+.bars::before {
     top: 5px;
 }
-.bars::after{
+.bars::after {
     top: -5px;
 }
 
