@@ -1,21 +1,21 @@
-let name = document.getElementById('name')
+/* let name = document.getElementById('name')
 let password = document.getElementById('password')
 let email = document.getElementById('email')
 let form = document.getElementById('myform')
 let button = document.getElementById('button')
-let errorElement = document.getElementById('error')
+let errorElement = document.getElementById('error') */
 
 //Toggle for hamburger menu
 
-let hamburger = document.getElementsByClassName('hamburger')
-let navmenu = document.getElementsByClassName('menu')
+let hamburger = document.getElementById('hamburger')
+let navmenu = document.getElementById('menu')
 
 hamburger.addEventListener('click', () => {
   navmenu.classList.toggle('active')
 })
 
 
-// Form Functionality
+/* // Form Functionality
 
 form.addEventListener('submit', (e) => {
   let messages = []
@@ -35,4 +35,4 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
     errorElement.innerText = messages.join(', ')
   }
-})
+}) */

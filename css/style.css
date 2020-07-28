@@ -167,7 +167,7 @@ p {
     background: lightgrey;
 }
 
-.menu-links.active {
+.menu.active {
     display: flex;
 }
 
