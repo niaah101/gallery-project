@@ -39,6 +39,18 @@ p {
   Class Styles
 ==================================== */
 
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.about p {
+    font-family: 'poppins';
+    font-size: 16px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -340,18 +352,10 @@ p {
 
 @media screen and (min-width: 1024px) {
 
-    .nav-menu {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 1.5rem;
-
-    }
-
     .nav-menu .logo {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
-
+/* 
     .nav-menu li {
         display: block;
     }
@@ -363,9 +367,9 @@ p {
 
     .hamburger {
          display: none;
-    }
+    } */
 
     .vidsmoke .letter {
-     font-size: 40px;
+     font-size: 60px;
     }
  }
