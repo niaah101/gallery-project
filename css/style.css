@@ -1,27 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 /* ================================= 
   Base Elements
 ==================================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web';
+}
 
 footer {
     display: block;
     text-align: center;
     font-size: 12px;
-    font-family: 'Titillium Web';
-}
-
-header {
-    padding: 15px;
+    /*font-family: 'Titillium Web';*/
 }
 
 p {
     padding: 15px;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: sans-serif;
 
 }
 
@@ -39,25 +39,76 @@ p {
   Class Styles
 ==================================== */
 
-.container img {
-    width: 90%;
-    height: 250px;
-    margin: 5px;
-    padding: 5px;
-    border: 2px solid whitesmoke;
-}
-
 .container {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    justify-content: space-evenly;
     background: black;
     height: 100%;
 }
 
 .container div {
-    max-width: 270px;
-    margin: 5px auto;
+    padding: 10px 15px;
+    width: 400px;
+    height: 300px;
+    margin: 5px 5px;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid whitesmoke;
+}
+
+.form {
+    display: flex;
+}
+
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu .logo {
+    color: darkblue;
+    margin: .5rem;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 1px rgb(235, 113, 6),
+            5px 5px 5px rgb(250, 229, 65),
+            2px 2px 2px black;
+}
+
+.nav-menu ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+
+}
+
+.nav-menu li {
+    list-style: none;
+    text-align: center;
+    display: none;
+}
+
+.nav-menu li a {
+    display: block;
+    color: darkblue;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+}
+
+.nav-menu li:hover {
+    background: lightgrey;
+}
+
+.menu-links.active {
+    display: flex;
 }
 
 .myform {
@@ -65,58 +116,46 @@ p {
     height: 12rem;
     width: 20rem;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    background-color: turquoise;
-    display: none;
+    justify-content: space-evenly;
+    background-color: transparent;
 }
 
 .myform button {
-    padding: 5px;
-    font-size: 14px;
+    padding: 5px 5px;
+    background: transparent;
+    border: 1px solid rgb(219, 71, 7);
+    text-decoration: none;
+    display: inline;
+    margin: 0 2em;
+    font-size: 17px;
+    color: yellow;
+    text-decoration: none;
     text-transform: uppercase;
-    justify-content: space-around;
+    letter-spacing: .12em;
+    text-shadow: 2px 2px 1px rgb(228, 83, 22),
+            4px 4px 3px darkblue,
+            2px 2px 2px black;
 }
-
 
 .myform label {
     font-weight: bold;
-    background-color: green;
+    background-color: blue;
     flex-basis: 2rem;
-    display: block;
     display: none;
 }
 
 .myform input {
     height: 2em;
     font-size: 14px;
-    background-color: whitesmoke;
+    /* background: transparent; */
+    /* border-color: rgb(228,83,22); */
 }
 
-
-.logo {
-    color: darkblue;
-    letter-spacing: 5px;
-    font-size: 12px;
-    text-decoration: none;
-    list-style: none;
-}
-
-.menu {
-    font-family: 'Titillium Web';
-}
-
-.menu li ul {
-    list-style: none;
-}
-
-.menu li a {
-    display: block;
-    color: darkblue;
-    letter-spacing: 3px;
-    font-size: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
+.myform ::placeholder {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .vidsmoke {
@@ -157,6 +196,7 @@ p {
     text-shadow: 2px 2px 1px rgb(228, 83, 22),
             4px 4px 3px darkblue,
             2px 2px 2px black;
+    display: none;
 }
 
 /* ================================= 
@@ -228,52 +268,36 @@ p {
   Hamburger Menu
 ==================================== */
 
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .hamburger {
-    order: 1;
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
     cursor: pointer;
     display: block;
 }
 
-
-.item {
-    width: 100%;
-    text-align: center;
-    order: 2;
-    display: none;
-}
-
-.item.active {
-    display: block;
-}
-
-.bars {
+.hamburger .bars {
     background: darkblue;
     display: inline-block;
-    height: 3px;
+    height: 4px;
     position: relative;
-    width: 18px;
+    width: 30px;
+    border-radius: 15px;
 }
 
-.bars::before,.bars::after {
+.hamburger .bars::before,.hamburger .bars::after {
     background: darkblue;
     display: inline-block;
-    height: 2px;
+    height: 4px;
     position: absolute;
-    width: 18px;
+    width: 30px;
     content: "";
 }
-.bars::before {
-    top: 5px;
+.hamburger .bars::before {
+    top: 8px;
 }
-.bars::after {
-    top: -5px;
+.hamburger .bars::after {
+    top: -8px;
 }
 
 
@@ -281,33 +305,67 @@ p {
   Media Queries
 ==================================== */
 
-@media screen and (min-width: 768px) { /*change to burger menu*/
-    .logo {
-        font-size: 20px;
+@media screen and (min-width: 768px) { /*change to full menu*/
+
+    .nav-menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.5rem;
+
     }
-    
-    .burger {
+
+    .nav-menu .logo {
+        font-size: 2.5rem;
+    }
+
+    .nav-menu li {
+        display: block;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hamburger {
          display: none;
     }
 
-    .item {
-        display: block;
-        width: auto;
-    }
- 
-    .vidsmoke h1 {
+    .vidsmoke .letter {
      font-size: 40px;
     }
  }
 
 
 @media screen and (min-width: 1024px) {
-    .nav li {
-        width: 30px;
+
+    .nav-menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.5rem;
+
     }
 
-    .vidsmoke h1 {
-        font-size: 60px;
+    .nav-menu .logo {
+        font-size: 2.5rem;
     }
-}
 
+    .nav-menu li {
+        display: block;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hamburger {
+         display: none;
+    }
+
+    .vidsmoke .letter {
+     font-size: 40px;
+    }
+ }
