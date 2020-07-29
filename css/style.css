@@ -57,7 +57,7 @@ p {
 .container {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: center;
     justify-content: space-evenly;
     background:	rgb(46, 86, 115);
     height: 100%;
@@ -82,13 +82,14 @@ p {
 }
 
 .nav-menu .logo {
-    color: darkblue;
+    color: rgb(228, 83, 22);
     margin: .5rem;
     font-size: 2rem;
     letter-spacing: 3px;
-    text-shadow: 2px 2px 1px rgb(235, 113, 6),
+    text-shadow: 2px 2px 1px navy,
             5px 5px 5px rgb(250, 229, 65),
             2px 2px 2px black;
+    text-transform: uppercase;
 }
 
 .menuLinks {
@@ -138,10 +139,10 @@ p {
 }
 
 .vidsmoke .letter {
-    color: rgb(245, 47, 47);
+    color: rgb(228, 83, 22);
     font-size: 20px;
     letter-spacing: 0.2em;
-    text-shadow: 2px 2px 1px rgb(235, 113, 6),
+    text-shadow: 2px 2px 1px navy,
             5px 5px 5px rgb(250, 229, 65),
             2px 2px 2px black;
     margin-bottom: 2em;
@@ -324,11 +325,11 @@ p {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        font-size: 1.5rem;
+        font-size: 22px;
     }
 
     .nav-menu .logo {
-        font-size: 2.5rem;
+        font-size: 30px;
     }
 
     .menuLinks {
@@ -357,7 +358,7 @@ p {
 @media screen and (min-width: 1024px) {
 
     .nav-menu .logo {
-        font-size: 3rem;
+        font-size: 40px;
     }
 
     .vidsmoke .letter {
