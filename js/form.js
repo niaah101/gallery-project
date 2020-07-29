@@ -1,13 +1,14 @@
 // Javascript for Login
     
-function form() {
+function validate() {
 
   let username = document.getElementById('username')
   let password = document.getElementById('password')
 
     if(username.value == "pretty" && password.value =="cloudz")
       {
-        window.open(gallery.html)
+        window.open("gallery.html","_parent")
+        page.open
       }
     else
     {
