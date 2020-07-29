@@ -10,9 +10,14 @@ let errorElement = document.getElementById('error') */
 let hamburger = document.getElementById('hamburger')
 let navmenu = document.getElementById('menu')
 
-hamburger.addEventListener('click', () => {
-  navmenu.classList.toggle('active')
-})
+hamburger.onclick = function() {
+  if (navmenu.className =="open") {
+      navmenu.className = "";
+
+  } else { 
+      navmenu.className = "open";
+  }
+};
 
 
 /* // Form Functionality

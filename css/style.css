@@ -141,35 +141,40 @@ p {
             2px 2px 2px black;
 }
 
-.nav-menu ul {
+.menu ul {
     margin: 0;
     padding: 0;
     display: block;
-
 }
 
-.nav-menu li {
+.menu li {
     list-style: none;
     text-align: center;
     display: none;
 }
 
-.nav-menu li a {
+.menu li a {
     display: block;
     color: darkblue;
     padding: 1rem;
     text-decoration: none;
     text-transform: uppercase;
     padding: .5rem 1rem;
+    list-style: none;
+    text-align: center;
 }
 
-.nav-menu li:hover {
+.menu li:hover {
     background: lightgrey;
 }
 
-.menu.active {
-    display: flex;
+.menu.open {
+    display: block;
 }
+
+/* ================================= 
+  Landing Page 
+==================================== */
 
 .vidsmoke {
     display: flex;
@@ -332,11 +337,11 @@ p {
         font-size: 2.5rem;
     }
 
-    .nav-menu li {
+    .menu li {
         display: block;
     }
 
-    .nav-menu ul {
+    .menu ul {
         display: flex;
         flex-direction: row;
     }
