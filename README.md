@@ -1,4 +1,6 @@
-This project is intended to display a flexbox gallery of my personal photos taken while traveling to several destinations.  There is a landing page which allows a person to login prior to accessing the gallery.  The only requirement is that the password be at least 8 characters.  Otherwise the vaules for Username and Password can be anything.
+This project is intended to display a flexbox gallery of my personal photos taken while traveling to several destinations.  
+
+There is a landing page which allows a person to login prior to accessing the gallery.  The only requirement is that the username is "pretty" and the password is "cloudz".
 
 The about.html page is simple and has only a paragraph of information and gives credit for the photo used on the landing page, index.html.
 
