@@ -1,14 +1,20 @@
-/* let name = document.getElementById('name')
-let password = document.getElementById('password')
-let email = document.getElementById('email')
-let form = document.getElementById('myform')
-let button = document.getElementById('button')
-let errorElement = document.getElementById('error') */
-
 //Toggle for hamburger menu
 
-let hamburger = document.getElementById('hamburger')
-let navmenu = document.getElementById('menu')
+function myFunction() {
+  
+  let navmenu = document.getElementById('menuLinks');
+
+  if (navmenu.style.display === "block") {
+    navmenu.style.display = "none";
+  } else {
+    navmenu.style.display = "block";
+  }
+}
+
+
+//Old toggle code used
+/*let hamburger = document.getElementById('hamburger')
+let navmenu = document.getElementById('menu-links')
 
 hamburger.onclick = function() {
   if (navmenu.className =="open") {
@@ -17,10 +23,17 @@ hamburger.onclick = function() {
   } else { 
       navmenu.className = "open";
   }
-};
+}; */
 
 
 /* // Form Functionality
+
+/* let name = document.getElementById('name')
+let password = document.getElementById('password')
+let email = document.getElementById('email')
+let form = document.getElementById('myform')
+let button = document.getElementById('button')
+let errorElement = document.getElementById('error')
 
 form.addEventListener('submit', (e) => {
   let messages = []

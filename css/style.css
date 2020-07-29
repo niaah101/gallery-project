@@ -141,20 +141,24 @@ p {
             2px 2px 2px black;
 }
 
-.menu ul {
-    margin: 0;
-    padding: 0;
-    display: block;
-}
-
-.menu li {
-    list-style: none;
-    text-align: center;
+.menuLinks {
     display: none;
 }
 
-.menu li a {
-    display: block;
+.menuLinks ul {
+    margin: 0;
+    padding: 0;
+    /*display: block;*/
+}
+
+.menuLinks li {
+    list-style: none;
+    text-align: center;
+    /*display: block;*/
+}
+
+.menuLinks li a {
+    /*display: block;*/
     color: darkblue;
     padding: 1rem;
     text-decoration: none;
@@ -164,12 +168,8 @@ p {
     text-align: center;
 }
 
-.menu li:hover {
+.menuLinks li:hover {
     background: lightgrey;
-}
-
-.menu.open {
-    display: block;
 }
 
 /* ================================= 
@@ -337,11 +337,15 @@ p {
         font-size: 2.5rem;
     }
 
-    .menu li {
+    .menuLinks {
         display: block;
     }
 
-    .menu ul {
+    .menuLinks li {
+        display: flex;
+    }
+
+    .menuLinks ul {
         display: flex;
         flex-direction: row;
     }
