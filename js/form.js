@@ -8,7 +8,6 @@ function validate() {
     if(username.value == "pretty" && password.value =="cloudz")
       {
         window.open("gallery.html","_parent")
-        page.open
       }
     else
     {
