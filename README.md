@@ -12,6 +12,6 @@ The Home page is actually linked to gallery.html, and the Exit option is linked 
 
 I sent the github pages link to my team at work and several of my friends and family to test.  All confirmed site is working as expected.  I tested it on my laptop, cell, and desktop for work and confirmed the same.
 
-There are some things that I would have done differently.  Like the structure of the gallery.html page and the container housing the photos for more styling options. I am thinking of doing it anyway after the class ends. I like the simplicity of the site though, and actually used a color picker to match the background color chosen to the picture on the landing page.  Love that option!
+There are some things that I would have done differently.  Like the structure of the gallery.html page and the container housing the photos for more styling options. Even the addition of details on each photo.  I am thinking of doing it anyway after the class ends. I like the simplicity of the site though, and actually used a color picker to match the background color chosen to the picture on the landing page.  Love that option for color selection!
 
 Finally, hover over all the photos to find the angel pic.  It looks just a little different than the rest!
