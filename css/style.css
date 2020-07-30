@@ -18,15 +18,6 @@ p {
 }
 
 /* ================================= 
-  Smoke Video
-==================================== */
-/*video {
-    object-fit: cover;
-}*/
-
-
-
-/* ================================= 
   Class Styles
 ==================================== */
 
@@ -51,7 +42,7 @@ p {
 }
 
 .container div {
-    padding: 10px 15px;
+    padding: 12px 10px;
     width: 400px;
     height: 300px;
     margin: 5px 5px;
@@ -80,29 +71,6 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-
-.message p {
-    font-size: 16px;
-    color: white;
-}
-
-.nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.nav-menu .logo {
-    color: rgb(228, 83, 22);
-    margin: 15px 20px;
-    font-size: 24px;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 1px navy,
-            5px 5px 5px rgb(250, 229, 65),
-            2px 2px 2px black;
-    text-transform: uppercase;
 }
 
 .menuLinks {
@@ -134,9 +102,37 @@ p {
     background: lightgrey;
 }
 
+.message p {
+    font-size: 16px;
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-menu .logo {
+    color: rgb(228, 83, 22);
+    margin: 15px 20px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 1px navy,
+            5px 5px 5px rgb(250, 229, 65),
+            2px 2px 2px black;
+    text-transform: uppercase;
+}
+
+
 /* ================================= 
   Landing Page 
 ==================================== */
+
+/* Smoke Video effect not being used.  Saved for future reference since it actually works but distorts image backround.  Need to work on z-index property.*/
+/*video {
+    object-fit: cover;
+}*/
 
 .vidsmoke {
     display: flex;
